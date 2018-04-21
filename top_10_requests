@@ -1,0 +1,6 @@
+SELECT       request,
+             COUNT(request) AS value_occurrence 
+    FROM     logs
+    GROUP BY request
+    ORDER BY value_occurrence DESC
+    LIMIT    10;
